@@ -25,3 +25,20 @@ Why it matters: people who see an ad often check the profile before trusting. Or
 - Manual reading of public profiles, no automated collection (Meta terms).
 - Analyse the company's content, not the commenters (no names in reports).
 - Followers, likes and views are point-in-time: always date and source. "Big following" does not mean "sells": organic -> sales link = INFERRED.
+
+## Last 10 posts, one by one (always at Standard and Deep)
+Counting followers and cadence is not an analysis. Open the 10 most recent posts (organic, or ads if they run any) and fill one row each:
+
+| # | Date | Format | What is shown | Caption / hook | Likes / comments | Product visible? | AI-made? |
+|---|---|---|---|---|---|---|---|
+
+Then answer, as a reading kept apart from the table:
+1. **Recurring theme and what it is for.** A repeated subject is a positioning choice, not decoration. Sport, travel, family, craft, nightlife: name the theme and say what it lends the brand (sport = discipline, energy, a popular interest that brings the brand closer to people). Note series (one theme per month) and how long each runs.
+2. **Product or mood.** In how many of the 10 is the product clearly visible, named, or shown in use?
+3. **AI-made images.** A platform label ("AI info", "AI content") is OBSERVED: screenshot it. Without a label it is INFERRED from signs: the same face across unrelated scenes, no model or photographer credited or tagged, rendered skin and hands, impossible details. Say what AI imagery costs them: no real customer, no real proof.
+4. **Voice and language.** Slogans or information? One language or two? Does the tone match the site and the ads?
+5. **Who it is aimed at vs who buys.** Describe the person the content speaks to, then the person who actually pays (from the funnel and the price). A gap between the two is a main finding.
+6. **Response.** Median likes over followers, comments, and which type of post gets the least.
+7. **Third-party marks or recognisable people** in promotional content: flag for the user to check, not legal advice.
+
+Reels and videos: say whether you saw the cover only or the frames (`creative-analysis.md` section 2).

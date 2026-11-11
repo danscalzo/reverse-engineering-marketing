@@ -19,6 +19,15 @@ Not accessible: <blocked sources and why>
 | 1 | Structure | ... | OBSERVED | answered |
 | ... | | | | |
 
+## How they communicate (last 10 posts)
+<Table, one row per post, then the reading: theme and its purpose, product or mood, AI-made or not, voice, aimed at whom vs who buys. See `organic.md`.>
+
+## Site copy
+<Headline, what it says and never says, description words, tone, voice consistency. See `landing-site-tracking.md`.>
+
+## Competitors (top level)
+<2-4 names: who, what they sell, how they communicate, active ads with filter. What they do that the subject does not.>
+
 ## Why it is built this way
 <For each key choice: what they do -> why (hypothesis or evidence).>
 

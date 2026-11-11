@@ -20,6 +20,16 @@
 - Legal and compliance text (disclaimers, licences, terms): where and how they place it.
 - What is missing / missed opportunities.
 
+## Copy reading (always report it, also for ecommerce)
+A structure audit without the words is half an analysis. Report:
+- **Main headline**: exact words, language (matches the visitor's?), promise of an outcome or a statement of identity.
+- **What the copy says vs never says**: list the 3-5 things a buyer needs (how it works, who it is for, price logic, proof, next step) and tick which the home page covers. Proof hidden one click away (about page) counts as missing from the home.
+- **Product or service descriptions**: length (median words), most frequent words (count them from the catalogue or page text), own jargon left unexplained, specs visible or tucked away.
+- **Tone**: person addressed, concrete or abstract, numbers or adjectives, objections answered in the text or not.
+- **Title tag and meta description** of the home.
+- **Voice consistency**: same message on site, social and ads? Quote one line from each. Different voices = different audiences being addressed.
+- **Translations**: errors in secondary languages.
+
 ## Common lead-killers (check every landing)
 Each one found is OBSERVED; its impact on leads is INFERRED unless you have the numbers.
 - **No tracking** (no pixel, no Google tag, no conversion event on submit or thank-you page): the platforms optimise blind.

@@ -16,6 +16,8 @@ Goal: understand why the creative works, not just describe it. Same evidence rul
 
 ## 3. Static and carousel
 - Real photos vs graphics vs AI; product alone vs in use; faces; text density; brand marks; consistency with landing and profile.
+- AI check: platform label ("AI info", "AI content") = OBSERVED; otherwise INFERRED from signs (same face in unrelated scenes, nobody credited, rendered skin or hands). Applies to ads and organic posts alike.
+- Theme: what the subjects have in common (sport, travel, family...) and what that theme is meant to lend the brand. Method and table: `organic.md`, "Last 10 posts".
 - Carousels: what card 1 does (hook) vs the last card (CTA); real sequence or just a gallery.
 
 ## 4. Hooks

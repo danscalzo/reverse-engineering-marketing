@@ -30,8 +30,8 @@ Every claim carries its evidence: source, date, filters, limits.
 
 | Depth | Time | Covers | Deliverable |
 |---|---|---|---|
-| Quick | ~15 min | Ad library inventory, main landing hero, offer, one-paragraph read | Chat summary + "worth going deeper?" |
-| Standard | ~1 h | 12 questions at summary level, 3 best / 3 worst, tags, organic, reputation | Report file |
+| Quick | ~15 min | Ad library inventory, main landing hero, offer, one-paragraph read, competitors named in one line | Chat summary + "worth going deeper?" |
+| Standard | ~1 h | 12 questions at summary level, 3 best / 3 worst, tags, last 10 posts read one by one, site copy, reputation, competitors at top level | Report file |
 | Deep | 2 h+ | Everything, frames of every key video, landing section by section, inside-mode map, playbook | Report + landing folder + playbook |
 
 ## 2. Route by input
@@ -63,14 +63,17 @@ Every claim carries its evidence: source, date, filters, limits.
 2. **Budget, bidding, results**: bid strategy, targets, budgets, spend, conversions, cost per result. No access = UNKNOWN.
 3. **Audience**: areas, radius, age, exclusions, special ad category, real placements.
 4. **Creative**: concepts vs variations, formats, video frames, faces, style, brand consistency (`creative-analysis.md`).
-5. **Copy**: template, hooks by type, CTA, what varies.
-6. **Angle and offer**: what they really sell, to whom, which fear they remove.
+5. **Copy**: template, hooks by type, CTA, what varies. Ads AND site: the site copy is always read and reported (`landing-site-tracking.md`, "Copy reading").
+6. **Angle and offer**: what they really sell, to whom, which fear they remove. Say who the communication is aimed at and who actually buys: when the two differ, that is a finding.
 7. **Credibility**: proof inventory, checkable or not (`creative-analysis.md` section 5).
 8. **Funnel**: ad -> page -> form (whose?) -> where the lead lands -> follow-up. Follow-up speed decides most lead businesses: read passive signals first (WhatsApp or chat button, "typically replies within" on the page, reviews about slow replies). An active test (one genuine question by message, time to reply recorded) only with the user's explicit approval, never a fake lead.
 9. **Tracking**: tags, UTMs, conversion events, what the platforms optimise for.
-10. **Organic**: the credibility layer people check after an ad (`organic.md`).
+10. **Organic**: the credibility layer people check after an ad (`organic.md`). Always read the last 10 posts one by one: what they show, the recurring theme and what it is used for, whether the images are AI-made.
 11. **Reputation**: rating, count, recency, owner replies, themes.
 12. **Who runs it and what it costs**: agency, tools, public pricing.
+
+### Always, at every depth: competitors at top level
+Name the 2-4 main competitors even when nobody asked: who they are, what they sell, how they communicate, whether they advertise (active ads, with country and filter). One short table, a few minutes each. The user then decides whether to go deeper (`compare.md`). An analysis that names no competitor is incomplete.
 
 ## 5. Evidence rules
 - **Quick depth**: a light ledger in chat (claim, source, date, filter) is enough; no files needed.
@@ -113,6 +116,6 @@ Read `references/reading-and-verdict.md` (business lens, best and worst, verdict
 1. Report `<subject>-<topic>-<YYYY-MM-DD>.md` with ledger and evidence folder.
 2. Landing folder: numbered desktop + mobile screenshots, section-by-section "what + why".
 3. A reusable playbook if the strategy is replicable.
-4. Chat answer: the user's questions one by one, then your view; observed apart from proposals; status of each question.
+4. Chat answer: the user's questions one by one, then your view; observed apart from proposals; status of each question. Always include: how they communicate and to whom (posts and site copy), and the competitors by name.
 
 Worked example: `references/example-case.md`.
