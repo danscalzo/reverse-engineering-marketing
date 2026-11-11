@@ -1,0 +1,12 @@
+{
+  "name": "reverse-engineering-marketing",
+  "owner": { "name": "Dan Scalzo" },
+  "plugins": [
+    {
+      "name": "reverse-engineering-marketing",
+      "source": "./",
+      "description": "Reverse engineer any company's, agency's or creator's marketing from evidence you can legitimately access.",
+      "category": "marketing"
+    }
+  ]
+}

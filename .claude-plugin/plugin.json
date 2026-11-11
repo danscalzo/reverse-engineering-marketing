@@ -1,0 +1,9 @@
+{
+  "name": "reverse-engineering-marketing",
+  "version": "1.2.0",
+  "description": "Reverse engineer any company's, agency's or creator's marketing from evidence you can legitimately access.",
+  "author": { "name": "Dan Scalzo" },
+  "license": "MIT",
+  "keywords": ["marketing", "reverse-engineering", "competitor-analysis", "meta-ads", "google-ads", "landing-page"],
+  "skills": "./skills"
+}

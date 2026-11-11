@@ -1,0 +1,6 @@
+# private, never publish
+_*.md
+**/references/local.md
+research/
+.DS_Store
+__pycache__/
