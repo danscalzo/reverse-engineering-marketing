@@ -3,7 +3,7 @@ name: reverse-engineering-marketing
 description: Reverse engineer how a company, agency or personal brand does its marketing, from evidence you can legitimately access, in any country - ad libraries (Meta, Google, TikTok, LinkedIn), landing pages, website tracking, creatives and video frames, organic socials, reviews, company registers, and ads accounts you can read. Two modes - outside-in (public evidence on any competitor) and inside (a Google Ads or Meta account you can read: structure, keywords, search terms, bidding, budgets, assets, landing pages, conversions). Rebuilds what they do and why, keeps observed, derived, inferred and unknown apart, compares competitors and tracks changes over time. Use when asked to "reverse engineer", "analyse their ads/strategy/funnel/account", "how is this account built", "what is this competitor doing", "compare these competitors", "break down this landing page", "study this creator's content", or when given an Ad Library page, an ads account, a profile or a landing URL. Works in any language. Skip it for routine performance reporting and SEO-only audits.
 license: MIT
 metadata:
-  version: "1.2.0"
+  version: "1.5.0"
 ---
 
 # Reverse Engineering Marketing
@@ -14,19 +14,43 @@ Every claim carries its evidence: source, date, filters, limits.
 ## Before you start
 - If `references/local.md` exists, read it first (language, output folder, tools, private rules). It overrides the defaults here.
 - Default output folder: `./research/`. Reply in the user's language.
-- No ceremony: if browser, web or ads tools are available, start.
+- Brief before research: run section 0 first. Once the brief is clear, no further ceremony: if browser, web or ads tools are available, start.
 
 ## When not to use
 - Routine KPI reports: use a reporting skill. This one explains how and why something is built.
 - Pure SEO or technical site audits.
 - Anything needing logins you don't hold, fake profiles or bypassing controls: refuse (Guardrails).
 
+## 0. Brief first: ask, then research
+Do not open a single source before the brief is clear. A full sweep on a subject nobody scoped wastes time and tokens and buries the two things the user wanted under ten they did not.
+
+Ask ONE round of questions (a multiple-choice question tool if you have one, otherwise a short numbered list), at most 4, each with a recommended default. Skip any question the request already answers. Skip the whole round only when the request already gives the market AND what the user wants to know, or the user says "everything" / "full analysis".
+
+1. **Why this subject** (sets the lens of the verdict):
+   - my brand or a client's: audit, what to fix
+   - a competitor: where they are strong, where they can be beaten
+   - a prospect: 3 opportunities to open a conversation
+   - inspiration: what to copy, as a playbook
+   If the answer is "my brand or a client's", ask at once: **is there an ads account I can read** (Google Ads, Meta), and how (API, MCP, browser already signed in)? Yes = inside mode: real keywords, search terms, spend, conversions, and the keep / cut / test table. No, or a competitor / prospect / inspiration = outside-in: public evidence only, and anything that lives inside the account stays UNKNOWN. Never assume access, never ask for a login: only access the user already holds.
+2. **Market**: country (town or area for a local business). Never assumed.
+3. **Paid, what matters** (multi-select): Meta ads (active or not, how many creatives, since when, formats, hooks) / Google Ads (active or not, Search, Shopping, Video) / other platforms (TikTok, LinkedIn) / not interested in paid.
+4. **Beyond paid, what matters** (multi-select): organic social and how they communicate / products, prices, offers, bestsellers / site, landing, copy and tracking / business numbers, reputation, competitors, who runs it.
+
+Then restate the brief in one line ("Example Cycles, US, competitor lens: Meta ads + bestsellers, chat answer") and start.
+
+**Scope rules**
+- Research ONLY the chosen modules. The others are written "not in scope", not UNKNOWN, and are not researched "just in case".
+- Depth follows the scope: 1-2 modules = Quick, answer in chat. 3+ modules or "everything" = report file. Ask about depth only if still unclear.
+- Cheapest check first: for a paid module answer the yes/no question first (ads active? how many? since when?, with country and filter) and report it before drilling into creatives.
+- Sub-agents only for chosen modules, one per module, and only when there are 3 or more.
+- Close by naming in ONE line the modules left out, so the user can ask for them. Do not run them unasked.
+
 ## 1. Fix target, market, mode, depth
 - **Target**: brand and legal name, domain(s), social pages, advertiser names. Ambiguous = ask for the name AND the country. Never guess the target from nearby files or past research; never switch target silently.
 - **Market**: country, language, sector, regulated or not. Sources and rules change by market: `references/market-adapter.md`.
 - **Business type** decides what "well built" means: `references/business-type.md`.
-- **Mode**: outside-in (public evidence) or inside (you can read the ads account: deeper, preferred).
-- **Depth** (ask only if unclear; default Standard):
+- **Mode**: outside-in (public evidence) or inside (you can read the ads account: deeper, preferred). Decided in the brief (section 0, question 1), not guessed.
+- **Depth** (follows the brief's scope, section 0; ask only if still unclear):
 
 | Depth | Time | Covers | Deliverable |
 |---|---|---|---|
@@ -50,7 +74,7 @@ Every claim carries its evidence: source, date, filters, limits.
 | "Keep an eye on them" | `references/monitoring.md` |
 
 ## 3. Plan
-1. Turn the request into questions, each paired with the evidence it needs: the 12 below plus the user's.
+1. Turn the brief into questions, each paired with the evidence it needs: only those of the 12 below that fall inside the chosen modules, plus the user's own.
 2. Reuse prior research in the output folder. Do not redo.
 3. **Summary first**: inventory (active ads and since when, formats, pages, live channels). Drill only where a question is open: 1-3 examples per cluster.
 4. Corroborate with the right evidence type ("website by X" does not prove X runs the ads).
@@ -59,21 +83,22 @@ Every claim carries its evidence: source, date, filters, limits.
 7. Close every question as answered / partial / open.
 
 ## 4. The 12 questions (always with the why)
+Answer the ones inside the brief's scope. Map: Meta / Google / other paid = 1-5 on that platform; organic = 10; products and offers = 6; site, copy, tracking = 5, 8, 9; business, reputation, competitors, who runs it = 7, 11, 12 and the competitor table. The rest is "not in scope".
 1. **Structure**: campaign types, campaigns, ad sets / ad groups, ads, naming; for search also keywords, match types, negatives, real search terms.
 2. **Budget, bidding, results**: bid strategy, targets, budgets, spend, conversions, cost per result. No access = UNKNOWN.
 3. **Audience**: areas, radius, age, exclusions, special ad category, real placements.
 4. **Creative**: concepts vs variations, formats, video frames, faces, style, brand consistency (`creative-analysis.md`).
-5. **Copy**: template, hooks by type, CTA, what varies. Ads AND site: the site copy is always read and reported (`landing-site-tracking.md`, "Copy reading").
+5. **Copy**: template, hooks by type, CTA, what varies. Ads AND site: when the site is in scope its copy is always read and reported (`landing-site-tracking.md`, "Copy reading").
 6. **Angle and offer**: what they really sell, to whom, which fear they remove. Say who the communication is aimed at and who actually buys: when the two differ, that is a finding.
 7. **Credibility**: proof inventory, checkable or not (`creative-analysis.md` section 5).
 8. **Funnel**: ad -> page -> form (whose?) -> where the lead lands -> follow-up. Follow-up speed decides most lead businesses: read passive signals first (WhatsApp or chat button, "typically replies within" on the page, reviews about slow replies). An active test (one genuine question by message, time to reply recorded) only with the user's explicit approval, never a fake lead.
 9. **Tracking**: tags, UTMs, conversion events, what the platforms optimise for.
-10. **Organic**: the credibility layer people check after an ad (`organic.md`). Always read the last 10 posts one by one: what they show, the recurring theme and what it is used for, whether the images are AI-made.
+10. **Organic**: the credibility layer people check after an ad (`organic.md`). When organic is in scope, read the last 10 posts one by one: what they show, the recurring theme and what it is used for, whether the images are AI-made.
 11. **Reputation**: rating, count, recency, owner replies, themes.
 12. **Who runs it and what it costs**: agency, tools, public pricing.
 
-### Always, at every depth: competitors at top level
-Name the 2-4 main competitors even when nobody asked: who they are, what they sell, how they communicate, whether they advertise (active ads, with country and filter). One short table, a few minutes each. The user then decides whether to go deeper (`compare.md`). An analysis that names no competitor is incomplete.
+### Competitors at top level
+When competitors are in scope (or the brief is "everything"), name the 2-4 main competitors: who they are, what they sell, how they communicate, whether they advertise (active ads, with country and filter). One short table, a few minutes each. The user then decides whether to go deeper (`compare.md`). Out of scope: at most one line naming them from what you already saw, no extra research.
 
 ## 5. Evidence rules
 - **Quick depth**: a light ledger in chat (claim, source, date, filter) is enough; no files needed.
@@ -112,10 +137,10 @@ Ledger: | ID | Claim | Class | Evidence | Confidence | Search boundary | Unknown
 - If the user corrects a fact, fix the report at once and add a line to the ledger: what changed and why.
 
 ## 9. Verdict and deliverables
-Read `references/reading-and-verdict.md` (business lens, best and worst, verdict, experiment card, client-ready version). Deliver with `references/report-template.md`:
+Read `references/reading-and-verdict.md` (one move on top, business lens, best and worst, verdict, experiment card, client-ready version). The answer and the report OPEN with three lines: constraint, one move, the number and date that prove it right or wrong. Inside mode on Google Ads: conversions are checked before any judgement, then the keep / cut / test table (`references/google-ads-account.md`). Deliver with `references/report-template.md`:
 1. Report `<subject>-<topic>-<YYYY-MM-DD>.md` with ledger and evidence folder.
 2. Landing folder: numbered desktop + mobile screenshots, section-by-section "what + why".
 3. A reusable playbook if the strategy is replicable.
-4. Chat answer: the user's questions one by one, then your view; observed apart from proposals; status of each question. Always include: how they communicate and to whom (posts and site copy), and the competitors by name.
+4. Chat answer: the user's questions one by one, then your view; observed apart from proposals; status of each question. Answer in the order of the brief. Include how they communicate and to whom, and the competitors by name, only when those modules were chosen. Last line: the modules not covered, on offer.
 
 Worked example: `references/example-case.md`.
