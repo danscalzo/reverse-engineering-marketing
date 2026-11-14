@@ -5,15 +5,22 @@ File: `<output folder>/<subject>-<topic>-<YYYY-MM-DD>.md`. Write in the user's l
 ```markdown
 # <Subject> · marketing reverse engineering (<date>)
 
+Brief: <why this subject: own or client / competitor / prospect / inspiration> · In scope: <modules chosen> · Not in scope: <modules left out>
 Target: <brand / legal name>, <domains>, <pages>, <country>
 Market: <country, language, sector, regulated?> · Business type: <...> · Mode: <outside-in / inside> · Depth: <quick / standard / deep>
 Sources used: <list with dates and filters>
 Not accessible: <blocked sources and why>
 
+## The one move
+- Constraint: <one>
+- Move: <one action; more of what works before better, better before new>
+- Check: <number, threshold, date>
+
 ## In one paragraph
 <What they sell, to whom, through which channel, and the one idea that makes it work.>
 
 ## The 12 questions
+<Only the rows in scope; the others in one line as "not in scope".>
 | # | Question | Answer | Class | Status |
 |---|---|---|---|---|
 | 1 | Structure | ... | OBSERVED | answered |

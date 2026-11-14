@@ -1,5 +1,12 @@
 # Reading and verdict (after the facts, never before)
 
+## One move on top (before anything else in the answer and in the report)
+Three lines, written last, placed first:
+- **Constraint**: the one thing that limits results most (tracking, offer, traffic, landing, follow-up). One, not three.
+- **Move**: the single action that attacks it. Default order: do MORE of what already works, then do it BETTER, only then something NEW.
+- **Check**: the number to watch, the threshold and the date ("if cost per purchase is not under X by <date>, the move was wrong").
+If the evidence does not support one move (outside-in with thin data), say "no single move established" and name what would establish it. Never pad it with a list.
+
 ## Business lens
 - **Market**: growing? pain with a trigger event? money available?
 - **Real buyer**: who decides and pays (e.g. the parent who pays, not the student who uses it).
