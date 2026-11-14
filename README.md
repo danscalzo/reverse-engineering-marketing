@@ -4,7 +4,7 @@
 
 **See a competitor's marketing you like. Understand how it works, and why, from evidence.**
 
-![version](https://img.shields.io/badge/version-1.3.0-blue) ![license](https://img.shields.io/badge/license-MIT-yellow) ![agent skill](https://img.shields.io/badge/agent%20skill-Claude%20Code-8A2BE2)
+![version](https://img.shields.io/badge/version-1.5.0-blue) ![license](https://img.shields.io/badge/license-MIT-yellow) ![agent skill](https://img.shields.io/badge/agent%20skill-Claude%20Code-8A2BE2)
 
 [Quick start](#quick-start) · [What you get](#what-you-get) · [What it does](#what-it-does) · [Ask it](#ask-it) · [Rules](#rules-it-follows) · [Layout](#layout) · [Feedback](#feedback)
 
