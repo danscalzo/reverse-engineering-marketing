@@ -45,7 +45,52 @@ Mark gaps: proof claimed but not shown, ratings without source, vague numbers.
 ## 5b. Winners with account access (inside mode)
 - A winner has a **high CTR AND produces the money event** (purchases, qualified leads). High CTR alone is attention, not sales.
 - Benchmarks change by sector and country: compare each creative with the account's own median and history, not with a fixed number from elsewhere. State the period.
-- Variations of a winner are the next step: keep what was learned (hook, angle, proof) and change one element at a time.
+- Next steps from a winner: iterations change one element at a time to learn what carries it; new concepts stack proven variables into a fresh idea (section 7d).
 
 ## 6. Why it works (the reading)
 Write, as INFERRED: which fear each creative removes, which buyer it speaks to, and how it hands off to the landing page (same words, same images, same offer?).
+
+## 7. From breakdown to next tests
+Turns a breakdown into reusable variables and tests. Scope by depth:
+- **Quick**: skip, or at most the 7a variable list in chat. No library file, no test cards.
+- **Standard**: 7a, plus 1-3 tests from 7d as proposals.
+- **Deep**, or when the user asks for tests, a swipe breakdown or a playbook: all of 7a-7f.
+Tests are always proposals: the skill never creates, launches or budgets them (Guardrails).
+
+### 7a. Split each creative into variables
+Every creative is a stack of elements that can win or lose on their own. One row per variable, each citing an evidence ID:
+| Group | Variables |
+|---|---|
+| Messenger | casting role only (owner, staff, customer, creator, nobody); fits the target buyer yes/no (INFERRED) |
+| Setting | place, background, props, light, real or staged (INFERRED) |
+| Look | clothing colours, framing, camera style (selfie, tripod, screen recording), edit pace, caption style |
+| Message | hook type and idea, angle, offer, proof, CTA |
+| Format | length, ratio, static / video / carousel, sound on or off |
+No age, appearance or identity claims about the people on camera (Guardrails).
+
+Status of each variable (rule of thumb, not statistical proof: state spend and sample behind each result):
+- **Candidate**: seen in one ad or swipe. Anything seen from outside stays here: one external ad is one data point, and a long run date is a proxy, not proof.
+- **Supported**: won one test on the user's own account against their control.
+- **Winner**: won two or more tests, or held across different concepts.
+
+### 7b. Tier (inside mode only)
+S / A / B / C / D / F, DERIVED from the account's own spend and target cost per result (cite the export's evidence ID, state the period): S scales well above usual spend inside target, A profitable at usual spend, B profitable only small, C break-even, D below target, F no delivery or clearly losing. Outside-in the tier is UNKNOWN; run time is a proxy, labelled INFERRED.
+
+### 7c. Variables library
+Create or update `<brand>-variables-library.md` in the output folder only if the user asked for it or already has one; say so in one line. If none exists, ask once in the brief whether to start one.
+| Variable | Value | Status | Evidence ID | Test and result | Date | Notes |
+|---|---|---|---|---|---|---|
+No evidence ID, no row. Losing variables stay with their result. An untested idea is never written as a winner.
+
+### 7d. Next tests
+- **New concept**: stack Supported or Winner variables from the user's own library into a fresh idea, against the current control. This is where big jumps come from. Never clone a competitor's full stack.
+- **Iteration**: change one variable of a winner to learn what carries it. Good for learning, rarely beats the original by much, so not most of the test budget.
+- Each test uses the experiment card (`reading-and-verdict.md`) plus: variables kept, variables changed, evidence IDs behind the choice, and the minimum spend or impressions before reading it.
+- Read attention first (3-second view rate against the account's own median, never a fixed threshold from elsewhere), then the money event.
+- Every test that runs closes with a written conclusion, win or lose, recorded in the library if there is one.
+
+### 7e. Repurpose for the user's brand
+Translate the chosen variables into the user's product, buyer, real customer language and differentiator. Missing inputs = list the gaps, never invent drafts. Rebuild the logic; never copy the swipe's script, visuals or people.
+
+### 7f. Reverse mode: an ad that underperformed
+Put the loser next to the control or the closest winner, list the variables that differ, rank them by likely impact (INFERRED), and turn the top one or two into proposed tests. Check both the creative variables and the landing handoff (6) before concluding; do not blame product or market first.

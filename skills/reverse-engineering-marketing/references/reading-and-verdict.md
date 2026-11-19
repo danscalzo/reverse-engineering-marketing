@@ -32,7 +32,7 @@ If the evidence does not support one move (outside-in with thin data), say "no s
 |---|---|
 | Hypothesis | "If we do X like the subject, Y improves because Z" |
 | Baseline | current numbers, source, period |
-| Change | one variable only |
+| Change | iteration: one variable only; new concept: the proven variables stacked, listed one by one |
 | Measure | metric, threshold that means win / lose |
 | Check dates | +7 and +14 days |
 | Risk | budget, brand, compliance |

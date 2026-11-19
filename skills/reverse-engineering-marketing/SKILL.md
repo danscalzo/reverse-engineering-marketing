@@ -3,7 +3,7 @@ name: reverse-engineering-marketing
 description: Reverse engineer how a company, agency or personal brand does its marketing, from evidence you can legitimately access, in any country - ad libraries (Meta, Google, TikTok, LinkedIn), landing pages, website tracking, creatives and video frames, organic socials, reviews, company registers, and ads accounts you can read. Two modes - outside-in (public evidence on any competitor) and inside (a Google Ads or Meta account you can read: structure, keywords, search terms, bidding, budgets, assets, landing pages, conversions). Rebuilds what they do and why, keeps observed, derived, inferred and unknown apart, compares competitors and tracks changes over time. Use when asked to "reverse engineer", "analyse their ads/strategy/funnel/account", "how is this account built", "what is this competitor doing", "compare these competitors", "break down this landing page", "study this creator's content", or when given an Ad Library page, an ads account, a profile or a landing URL. Works in any language. Skip it for routine performance reporting and SEO-only audits.
 license: MIT
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
 ---
 
 # Reverse Engineering Marketing
@@ -87,7 +87,7 @@ Answer the ones inside the brief's scope. Map: Meta / Google / other paid = 1-5 
 1. **Structure**: campaign types, campaigns, ad sets / ad groups, ads, naming; for search also keywords, match types, negatives, real search terms.
 2. **Budget, bidding, results**: bid strategy, targets, budgets, spend, conversions, cost per result. No access = UNKNOWN.
 3. **Audience**: areas, radius, age, exclusions, special ad category, real placements.
-4. **Creative**: concepts vs variations, formats, video frames, faces, style, brand consistency (`creative-analysis.md`).
+4. **Creative**: concepts vs variations, formats, video frames, faces, style, brand consistency (`creative-analysis.md`). Variables, library and next tests (`creative-analysis.md` section 7) follow the depth: none at Quick, proposals at Standard, full at Deep or when the user asks for tests.
 5. **Copy**: template, hooks by type, CTA, what varies. Ads AND site: when the site is in scope its copy is always read and reported (`landing-site-tracking.md`, "Copy reading").
 6. **Angle and offer**: what they really sell, to whom, which fear they remove. Say who the communication is aimed at and who actually buys: when the two differ, that is a finding.
 7. **Credibility**: proof inventory, checkable or not (`creative-analysis.md` section 5).
