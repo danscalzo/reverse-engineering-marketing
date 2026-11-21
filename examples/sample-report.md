@@ -8,6 +8,9 @@ Market: United States, English, e-bikes, not regulated · Business type: ecommer
 Sources used (all read 2026-11-09): Meta Ad Library (US, all ads, last 90 days), Google Ads Transparency Center (domain, US, last 30 days), site and product pages, tag scan on 3 pages, Instagram and TikTok profiles, Google and Trustpilot reviews, company register.
 Not accessible: ads accounts, analytics, order data.
 
+## The one move
+No single move established: outside-in with no spend or sales data. What would establish it: the cost per sale of the monthly-price ads (account access) or the test-ride to purchase rate.
+
 ## In one paragraph
 Example Cycles sells e-bikes at $1,400 to $3,200 and makes the price feel small: every ad opens with "from $39 a month". Meta creates the demand, Google catches people who search the brand afterwards, and the site offers two doors: pay in instalments now, or book a free test ride. The idea that makes it work is removing the "too expensive" fear before anything else is said.
 
@@ -72,15 +75,32 @@ All fictional.
 What they do that Example Cycles does not: Acme Wheels runs constant discounts; Sample Motion lets people rent instead of buy. What only Example Cycles does: the free test ride as a second door.
 Counts come from page-level searches with identical filters. Deeper comparison on request.
 
-## Why it is built this way
-- **Few concepts, many variations**: they test hooks, not ideas (E02). Cheap to produce, but near-identical ads may be grouped by the platform and shown to the same people (hypothesis).
-- **Monthly price in every hook**: removes "too expensive" first; the instalment widget on the page backs it up (E03, E06).
-- **Two doors**: buy now, or book a test ride. The second catches people who are not ready to pay online (E07).
-- **Organic shows real use**: the profile is where a doubtful buyer checks whether real people ride these bikes.
+## Reconstruction
+| Key choice | Rival hypotheses | Evidence that separates them | Leading (class, IDs) | Prediction (date) |
+|---|---|---|---|---|
+| Monthly price in every hook | H1 their engine / H2 finance partner's template / H3 habit or agency default | Partner's other retailers in the Ad Library (settles H2 today: different wording, H2 dropped); new concepts vs variations over time | H1, INFERRED, E02 E03 E13 | H1: by 2026-12-09 new concepts also open on the monthly price and the 2 ads without it disappear first. H3: new concepts open with other hooks, no pattern in what stops. |
+| Few concepts, many variations | H1 testing hooks on a proven video / H2 low production budget / H3 agency template output | Whether the variations launched in waves with the losers gone (H1) or all in one batch that stays (H2, H3) | H1, INFERRED, E02 | H1: by 2026-12-09 fewer than half of the 33 variations are still live and the survivors share a hook type. H2/H3: most stay live, no hook type dominates. |
+| Two doors: buy now or test ride | H1 catches buyers not ready to pay online / H2 showroom has to be filled anyway | Ads that push only the test ride; test-ride slots on weekdays vs weekends | H1, INFERRED, E07 | not dated: needs their test-ride to purchase rate (UNKNOWN) |
+
+Why they chose it vs why it works: the monthly price works because it removes the "too expensive" fear and the instalment widget backs it up (E03, E06); why they chose it is H1 over H2 only after the partner check (E13).
+Rebuilt test log: UNKNOWN for the past (in the US stopped commercial ads are not shown); rebuilt forward from the next snapshots.
+
+## Blueprint (the machine)
+| Step | What they use | Its job | Evidence | Class | To rebuild it you need |
+|---|---|---|---|---|---|
+| Traffic | Meta video ads, US; Google Search and Shopping | create demand; catch brand searches | E01 E05 | OBSERVED | ad accounts, budget, product feed |
+| Hook | "from $39 a month" first line | stop the commuter who thinks it is too expensive | E03 | OBSERVED | a finance option you can actually offer |
+| Offer | instalments, 30-day return, free test ride | remove price and commitment risk | E06 E11 | OBSERVED | a finance partner, returns margin |
+| Handoff | product page with instalment widget | keep the same promise as the ad | E06 E11 | OBSERVED | page built on the same headline |
+| Capture | checkout, or test-ride form by a booking vendor | two doors for two levels of readiness | E07 | OBSERVED | booking tool, showroom staff |
+| Follow-up | email confirmation; chat "replies in minutes" | | E07 | partly OBSERVED, rest UNKNOWN | CRM, reply speed |
+| Money event | online sale or showroom sale | | | UNKNOWN | their sales data |
+The one idea that makes it run: make a big ticket feel like a subscription. Weakest link: delivery delays (E09) undercut the "easy" promise if the machine is copied without the stock.
+Not rebuildable from outside: spend and split, past tests, cost per sale, audiences, follow-up after the first reply.
 
 ## Best and worst
 - Longest running ad: rider video with "from $39 a month", 74 days (E01). Probably a winner: hypothesis, there is no spend data (E04).
-- Shortest lived: two studio product shots, stopped after 6 days.
+- Shortest lived: UNKNOWN from outside (in the US stopped Meta ads are not shown); the next snapshot will show which variations disappear.
 - Results per ad: UNKNOWN.
 
 ## Verdict
@@ -105,8 +125,10 @@ Counts come from page-level searches with identical filters. Deeper comparison o
 | E10 | Last 10 posts: commute theme, product visible in 9 | OBSERVED / INFERRED (reading) | 10 post screenshots | High | Instagram only | TikTok posts |
 | E11 | Home headline matches the ad hook | OBSERVED | Home screenshot, desktop and mobile | High | Home page | |
 | E12 | Competitor active ad counts | OBSERVED | Ad Library, same filters | Medium | US, active, page level | Spend |
+| E13 | Finance partner's other retailers use different hooks | OBSERVED | Partner's Ad Library page | Medium | US, active, 3 retailers, 2026-11-09 | Other retailers |
 
 ## Open questions
 - What do they spend and what does a sale cost? Needs account access.
 - How many test rides become purchases? Needs their data or an interview.
 - Who runs the ads? No public signal found.
+- Open predictions (check 2026-12-09, same filters): new concepts keep the monthly price; fewer than half of the 33 variations still live.

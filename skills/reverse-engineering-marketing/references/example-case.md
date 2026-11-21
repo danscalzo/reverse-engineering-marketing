@@ -26,8 +26,19 @@
 - Organic is a showroom, not a funnel: polished product posts, no prices, no links. Ads do the selling, the profile builds trust.
 - Reviews: 4.6 on 900+, owners reply to negative ones within days; delivery delays are the recurring complaint.
 
+**Reconstruction of one key choice: the monthly-price hook**
+| Rival hypothesis | Evidence that separates them | Status |
+|---|---|---|
+| H1 it is their engine: it sells | new variations keep it; ads without it stop first | leading, INFERRED (E02, E03) |
+| H2 it is the finance partner's template | same wording on the partner's other retailers | open: check the partner's Ad Library |
+| H3 forced by margin: full price would not convert | full price hidden on the product page too | weak: full price is shown (E06) |
+Why they chose it (H1 vs H2) is still open; why it works (removes the price fear, backed by the Klarna widget) is supported.
+Check today: H2 is settled by the partner's Ad Library, no prediction needed. Prediction for what is left: "H1: by 2026-12-09 the new concepts (not just variations) also open on the monthly price, and the 2 active ads without it disappear before the others. If it were only habit or a default, new concepts would open with other hooks and nothing would stop in a pattern." Checked at the next snapshot, same filters (in the US stopped ads are not shown, so 'stopped' = present on 11-09, gone on 12-09).
+
+**Blueprint (short)**: Meta video hook on monthly price -> product page with instalment widget -> buy now, or book a test ride through a booking vendor -> (follow-up UNKNOWN) -> sale. The one idea: make a big ticket feel like a subscription. Weakest link if copied: it needs a finance partner and stock to deliver fast (delivery delays are already the top complaint).
+
 **Mistakes made and corrected**
-- Said "no TikTok ads" after checking only active ads; the "all ads" view showed a paused campaign. Lesson: state active vs all, and the period.
+- Said "no YouTube ads" after the Transparency Center's default last-30-days view; widening the date range showed a paused video campaign. Lesson: state the period and the filter.
 - Read "no pixel" from a browser extension before accepting cookies; after consent the pixel loaded. Lesson: record the consent state; interface hints are not evidence.
 
 **Still unknown**: spend, cost per sale, test-ride to purchase rate. So "does it make money?" stays open (E08).

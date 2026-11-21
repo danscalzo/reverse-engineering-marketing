@@ -14,7 +14,7 @@ Identify the type from the site and offer (OBSERVED), then check the points for 
 
 ## Local service vs ecommerce: two different funnels
 - **Ecommerce**: identify the platform first (Shopify, WooCommerce...: tag-scan third-party hosts, page source). Then judge product pages, checkout steps, payment options, feed and purchase tracking with value. A mainstream platform gives a sound default checkout: the gaps are usually in feed, offer and tracking, not in the cart.
-- **Local service**: everything depends on how the site is built. Check geo-optimisation (town and area in titles, pages per area, Google Business Profile linked), SEO basics, visibility in AI answers (GEO/AEO: ask the main AI assistants "best <service> in <town>" and record who is named), tracking, copy, and whether the page is built to convert (one action, proof, short form, call button).
+- **Local service**: everything depends on how the site is built. Check whether it targets the area (town in titles, pages per area, Google Business Profile linked), tracking, copy, and whether the page is built to convert (one action, proof, short form, call button). Full SEO or AI-visibility audits are out of scope: use a dedicated skill.
 
 ## Which channel fits (search vs social)
 - **Google first** when people actively search for the product or service because they need it (urgent or planned need, clear keywords). Check: search volume in that country and language (Keyword Planner, Trends).

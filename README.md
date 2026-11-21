@@ -4,7 +4,7 @@
 
 **See a competitor's marketing you like. Understand how it works, and why, from evidence.**
 
-![version](https://img.shields.io/badge/version-1.6.0-blue) ![license](https://img.shields.io/badge/license-MIT-yellow) ![agent skill](https://img.shields.io/badge/agent%20skill-Claude%20Code-8A2BE2)
+![version](https://img.shields.io/badge/version-1.7.0-blue) ![license](https://img.shields.io/badge/license-MIT-yellow) ![agent skill](https://img.shields.io/badge/agent%20skill-Claude%20Code-8A2BE2)
 
 [Quick start](#quick-start) · [What you get](#what-you-get) · [What it does](#what-it-does) · [Ask it](#ask-it) · [Rules](#rules-it-follows) · [Layout](#layout) · [Feedback](#feedback)
 
@@ -45,8 +45,8 @@ Or call the skill by name with the target:
 | Say | Time | You get |
 |---|---|---|
 | "quick" | ~15 min | Ad inventory, landing hero, offer, competitors in one line, a chat summary |
-| nothing (standard) | ~1 h | The 12 questions, last 10 posts, site copy, competitors, a report file with evidence |
-| "deep" | 2 h+ | Everything, every key video frame, landing section by section, a reusable playbook |
+| nothing (standard) | ~1 h | The 12 questions, the reconstruction (3 key choices, blueprint, 2 dated predictions), last 10 posts, site copy, competitors, a report file with evidence |
+| "deep" | 2 h+ | Everything, every key video frame, landing section by section, full reconstruction with the rebuilt test log, the blueprint as a reusable playbook |
 
 ### 4. Read the result
 The answer comes in chat; at standard and deep depth the agent also saves a report and an evidence folder in `./research/` (change the folder in `references/local.md`).
@@ -73,7 +73,8 @@ How a run goes:
 1. **Fix the target**: brand, domains, pages, country, business type.
 2. **Sweep the evidence**: ad libraries, site and tags, last 10 posts, reviews, and the ads account if you can read it.
 3. **Answer the 12 questions**, each with its evidence ID and its class.
-4. **Deliver**: report with ledger, how they communicate and to whom, competitors by name, verdict, one experiment to run.
+4. **Reconstruct the machine**: rival hypotheses for each key choice, a blueprint from first touch to sale, and dated predictions that can prove the model wrong at the next snapshot.
+5. **Deliver**: report with ledger, how they communicate and to whom, competitors by name, verdict, one experiment to run.
 
 ## What it does
 - **Two modes**: outside-in on any competitor from public evidence, or inside an ads account you can read (Google Ads, Meta): structure, keywords, search terms, bidding, budgets, assets, conversions.
@@ -83,7 +84,8 @@ How a run goes:
 - **Routes by input**: an ads account, a company name, a landing URL, creatives, a creator profile, an agency name, several competitors.
 - **Creative teardown**: concepts vs variations, every key video frame, hook types, credibility inventory.
 - **How they communicate**: the last 10 posts read one by one (recurring theme and what it is for, product or mood, AI-made images or not, who it is aimed at vs who buys) and the site copy.
-- **Competitors always named**: 2-4 at top level in every analysis; the full comparison only if you ask.
+- **Reconstruction, not just inventory**: 2-3 rival hypotheses per key choice and the evidence that separates them, "why they chose it" kept apart from "why it works", a step-by-step blueprint, the test log rebuilt from stopped ads where the library shows them, and predictions checked at the next snapshot.
+- **Competitors named when in scope**: 2-4 at top level; the full comparison only if you ask.
 - **Compare and monitor**: competitor matrix, monthly snapshots and diffs.
 - **Evidence tools**: `tag-scan.js` (tags and form vendors on any page) and `gads_map.py` (read-only Google Ads account map).
 - **Summary first, then drill down**: inventory of ads, pages and channels; deep dives only where a question is open.
@@ -112,6 +114,7 @@ skills/reverse-engineering-marketing/
     sources.md             verified public sources + 30-minute sweep
     market-adapter.md      adapt sources and rules to any country and sector
     business-type.md       what "well built" means per business type
+    reconstruction.md      rival hypotheses, blueprint, predictions, rebuilt test log
     creative-analysis.md   concepts, video frames, hooks, credibility
     compare.md             several competitors side by side
     monitoring.md          snapshots and diffs over time

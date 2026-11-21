@@ -18,7 +18,7 @@
 - Declared enemy (who or what they attack to position themselves).
 - FAQs = objections of the real buyer.
 - Legal and compliance text (disclaimers, licences, terms): where and how they place it.
-- What is missing / missed opportunities.
+- What is missing, and whether the gap looks deliberate or not (feeds the rival hypotheses in `reconstruction.md`).
 
 ## Copy reading (always report it, also for ecommerce)
 A structure audit without the words is half an analysis. Report:
@@ -29,16 +29,6 @@ A structure audit without the words is half an analysis. Report:
 - **Title tag and meta description** of the home.
 - **Voice consistency**: same message on site, social and ads? Quote one line from each. Different voices = different audiences being addressed.
 - **Translations**: errors in secondary languages.
-
-## Common lead-killers (check every landing)
-Each one found is OBSERVED; its impact on leads is INFERRED unless you have the numbers.
-- **No tracking** (no pixel, no Google tag, no conversion event on submit or thank-you page): the platforms optimise blind.
-- **No call to action above the fold**: the visitor has to scroll to find what to do.
-- **Weak or missing hero image**: stock, blurry, or unrelated to the offer.
-- **Weak final CTA**: the bottom of the page ends without a clear next step, or repeats a different action.
-- **Form too long** for the value offered, or personal data asked before any commitment.
-- **Too much text**: walls of copy, no headings, the offer lost in the middle.
-- **Mobile not checked**: button below the fold, form fields too small, slow load.
 
 ## Tags (DevTools or JS) [STD]
 - Meta: `fbq`, `connect.facebook.net/.../fbevents.js`, `facebook.com/tr?id=`.

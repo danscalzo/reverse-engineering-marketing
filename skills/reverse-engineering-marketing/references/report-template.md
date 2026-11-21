@@ -35,8 +35,19 @@ Not accessible: <blocked sources and why>
 ## Competitors (top level)
 <2-4 names: who, what they sell, how they communicate, active ads with filter. What they do that the subject does not.>
 
-## Why it is built this way
-<For each key choice: what they do -> why (hypothesis or evidence).>
+## Reconstruction (`reconstruction.md`)
+| Key choice | Rival hypotheses | Evidence that separates them | Leading (class, IDs) | Prediction (date) |
+|---|---|---|---|---|
+| ... | H1 ... / H2 ... | ... | H1, INFERRED, E03 E07 | "..." by <date> |
+Why they chose it vs why it works: <kept apart, one line each per key choice>.
+Rebuilt test log: <batches, what stopped, what was scaled> or UNKNOWN (only active ads visible).
+
+## Blueprint (the machine)
+| Step | What they use | Its job | Evidence | Class | To rebuild it you need |
+|---|---|---|---|---|---|
+| Traffic / Hook / Offer / Handoff / Capture / Follow-up / Money event | | | | | |
+The one idea that makes it run: <one sentence>. Weakest link: <where it breaks if copied>.
+Not rebuildable from outside: <spend, test history, unit economics, audiences, CRM: what would resolve each>.
 
 ## Best and worst
 <3 + 3 with numbers and source, or UNKNOWN.>

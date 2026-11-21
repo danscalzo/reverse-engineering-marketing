@@ -6,7 +6,7 @@ Goal: understand why the creative works, not just describe it. Same evidence rul
 - List every active creative (cap at ~50: sample by most recent and longest running).
 - Group them into **concepts**: same idea, angle and visual approach = one concept, even if colours, text or the product change. Ten edits of one idea are one concept.
 - Report: number of creatives, number of distinct concepts, concepts per format. Few concepts behind many ads = low creative diversity; on Meta's current delivery system similar creatives tend to be grouped and compete as one (INFERRED from platform guidance, not visible from outside).
-- Longest-running ads (start date in the library) are the best public proxy for winners. Proxy, not proof.
+- Longest-running ads (start date in the library) are the best public proxy for winners. Proxy, not proof: an evergreen ad left on with a small budget, or a brand / retargeting ad, also runs for months. Separate them with the rivals table in `reconstruction.md`.
 
 ## 2. Video: look across the whole video
 - Never judge a video from its thumbnail or first second.
@@ -48,7 +48,7 @@ Mark gaps: proof claimed but not shown, ratings without source, vague numbers.
 - Next steps from a winner: iterations change one element at a time to learn what carries it; new concepts stack proven variables into a fresh idea (section 7d).
 
 ## 6. Why it works (the reading)
-Write, as INFERRED: which fear each creative removes, which buyer it speaks to, and how it hands off to the landing page (same words, same images, same offer?).
+Write, as INFERRED: which fear each creative removes, which buyer it speaks to, and how it hands off to the landing page (same words, same images, same offer?). This is "why it works"; "why they chose it" is a separate question (`reconstruction.md` section 2).
 
 ## 7. From breakdown to next tests
 Turns a breakdown into reusable variables and tests. Scope by depth:

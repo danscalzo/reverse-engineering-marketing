@@ -3,13 +3,14 @@ name: reverse-engineering-marketing
 description: Reverse engineer how a company, agency or personal brand does its marketing, from evidence you can legitimately access, in any country - ad libraries (Meta, Google, TikTok, LinkedIn), landing pages, website tracking, creatives and video frames, organic socials, reviews, company registers, and ads accounts you can read. Two modes - outside-in (public evidence on any competitor) and inside (a Google Ads or Meta account you can read: structure, keywords, search terms, bidding, budgets, assets, landing pages, conversions). Rebuilds what they do and why, keeps observed, derived, inferred and unknown apart, compares competitors and tracks changes over time. Use when asked to "reverse engineer", "analyse their ads/strategy/funnel/account", "how is this account built", "what is this competitor doing", "compare these competitors", "break down this landing page", "study this creator's content", or when given an Ad Library page, an ads account, a profile or a landing URL. Works in any language. Skip it for routine performance reporting and SEO-only audits.
 license: MIT
 metadata:
-  version: "1.6.0"
+  version: "1.7.0"
 ---
 
 # Reverse Engineering Marketing
 
 Answers: **how is this subject's marketing built, why is it built this way, and what can be reapplied?**
 Every claim carries its evidence: source, date, filters, limits.
+The inventory (section 4) says what they do; the reconstruction (section 4b) is what makes this reverse engineering: rival hypotheses, a blueprint of the machine, and predictions that can prove the model wrong.
 
 ## Before you start
 - If `references/local.md` exists, read it first (language, output folder, tools, private rules). It overrides the defaults here.
@@ -54,9 +55,9 @@ Then restate the brief in one line ("Example Cycles, US, competitor lens: Meta a
 
 | Depth | Time | Covers | Deliverable |
 |---|---|---|---|
-| Quick | ~15 min | Ad library inventory, main landing hero, offer, one-paragraph read, competitors named in one line | Chat summary + "worth going deeper?" |
-| Standard | ~1 h | 12 questions at summary level, 3 best / 3 worst, tags, last 10 posts read one by one, site copy, reputation, competitors at top level | Report file |
-| Deep | 2 h+ | Everything, frames of every key video, landing section by section, inside-mode map, playbook | Report + landing folder + playbook |
+| Quick | ~15 min | Ad library inventory, main landing hero, offer, one-paragraph read, one key choice with its rival hypothesis, competitors named in one line | Chat summary + "worth going deeper?" |
+| Standard | ~1 h | 12 questions at summary level, reconstruction (3 key choices, blueprint, 2 predictions), 3 best / 3 worst, tags, last 10 posts read one by one, site copy, reputation, competitors at top level | Report file |
+| Deep | 2 h+ | Everything, frames of every key video, landing section by section, inside-mode map, full reconstruction with rebuilt test log | Report + landing folder + playbook |
 
 ## 2. Route by input
 | You are given | First step |
@@ -80,7 +81,8 @@ Then restate the brief in one line ("Example Cycles, US, competitor lens: Meta a
 4. Corroborate with the right evidence type ("website by X" does not prove X runs the ads).
 5. Split big jobs into independent parts (sub-agents with a clear scope, returning sources, conclusions, gaps).
 6. Keep the ledger with evidence IDs (step 5).
-7. Close every question as answered / partial / open.
+7. Reconstruct (section 4b): key choices, rival hypotheses, blueprint, predictions.
+8. Close every question as answered / partial / open.
 
 ## 4. The 12 questions (always with the why)
 Answer the ones inside the brief's scope. Map: Meta / Google / other paid = 1-5 on that platform; organic = 10; products and offers = 6; site, copy, tracking = 5, 8, 9; business, reputation, competitors, who runs it = 7, 11, 12 and the competitor table. The rest is "not in scope".
@@ -99,6 +101,15 @@ Answer the ones inside the brief's scope. Map: Meta / Google / other paid = 1-5 
 
 ### Competitors at top level
 When competitors are in scope (or the brief is "everything"), name the 2-4 main competitors: who they are, what they sell, how they communicate, whether they advertise (active ads, with country and filter). One short table, a few minutes each. The user then decides whether to go deeper (`compare.md`). Out of scope: at most one line naming them from what you already saw, no extra research.
+
+## 4b. Reconstruction (mandatory: this is the reverse engineering)
+After the inventory, before the verdict. Method: `references/reconstruction.md`.
+- **Key choices**: the 3-5 choices that cost them money or effort, or differ from the market.
+- **Rival hypotheses**: at least 2 per key choice, plus the evidence that separates them. Keep "why they chose it" apart from "why it works".
+- **Blueprint**: the machine from first touch to money event, each step with its job, evidence and what it takes to rebuild it.
+- **Predictions**: one per key choice that gets one at the chosen depth (Standard: the 2 strongest; Deep: all), dated, checkable from outside, and different if a rival were true. Checked at the next snapshot (`monitoring.md`).
+- **Not rebuildable from outside**: spend, test history beyond the library, unit economics, audiences, CRM: UNKNOWN, with what would resolve them.
+Scaled by depth: Quick = one key choice in one line; Standard = 3 key choices + blueprint + 2 predictions; Deep = everything.
 
 ## 5. Evidence rules
 - **Quick depth**: a light ledger in chat (claim, source, date, filter) is enough; no files needed.
@@ -140,7 +151,7 @@ Ledger: | ID | Claim | Class | Evidence | Confidence | Search boundary | Unknown
 Read `references/reading-and-verdict.md` (one move on top, business lens, best and worst, verdict, experiment card, client-ready version). The answer and the report OPEN with three lines: constraint, one move, the number and date that prove it right or wrong. Inside mode on Google Ads: conversions are checked before any judgement, then the keep / cut / test table (`references/google-ads-account.md`). Deliver with `references/report-template.md`:
 1. Report `<subject>-<topic>-<YYYY-MM-DD>.md` with ledger and evidence folder.
 2. Landing folder: numbered desktop + mobile screenshots, section-by-section "what + why".
-3. A reusable playbook if the strategy is replicable.
-4. Chat answer: the user's questions one by one, then your view; observed apart from proposals; status of each question. Answer in the order of the brief. Include how they communicate and to whom, and the competitors by name, only when those modules were chosen. Last line: the modules not covered, on offer.
+3. The blueprint (in the report, section "Blueprint") is the reusable playbook: what to rebuild, in which order, with which inputs.
+4. Chat answer: the user's questions one by one, then the reconstruction (key choices, leading hypothesis vs rival, the one idea that makes it run; at Standard and Deep also the open predictions with dates), then your view; observed apart from proposals; status of each question. Answer in the order of the brief. Include how they communicate and to whom, and the competitors by name, only when those modules were chosen. Last line: the modules not covered, on offer.
 
 Worked example: `references/example-case.md`.
